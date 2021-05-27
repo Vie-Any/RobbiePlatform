@@ -76,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
 
     // the force of x axis
-    private float xVelocity;
+    public float xVelocity;
 
     [Header("Button settings")]
     // mark the state of jump button is pressed or not
@@ -241,10 +241,10 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         // if jump button is pressed and released right and the player is land on the ground and the player is not jump state 
-        if (jumpPressed && isOnGround && !isJump)
+        if (jumpPressed && isOnGround && !isJump && !isHeadBlocked)
         {
             // when the player was crouch state and the player is land on the ground
-            if (isCrouch & isOnGround && !isHeadBlocked)
+            if (isCrouch)
             {
                 // trigger stand up
                 StandUp();
