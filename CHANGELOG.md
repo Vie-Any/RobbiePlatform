@@ -4,6 +4,21 @@
 
 ### [🔗The series course video](https://space.bilibili.com/370283072/channel/detail?cid=91017&ctype=0)
 
+## 2021-05-27
+- Install a new package [Cinemachine].
+- Add a new camera and follow the player.
+- Create an empty object to distinguishing the scene border and make the camera margin will not move out of the scene.
+- Add some wall torch to the scene.
+- Use point light implement lighting effect for wall torch.
+- Add some hanging lamp fro prefab in source.
+- Add robbie body to the player
+- Add a script to conrtrol the player's animation 
+- Use hash id of animator's parameter to set value 
+- [[🔗video] Lesson 9-Camera(Prespective & camera following)](https://www.bilibili.com/video/BV1HE41127qk)]
+- [[🔗video] Lesson 10-Lighting effect(Normal Mapping)](https://www.bilibili.com/video/BV1dE411y7m3)]
+- [[🔗video] Lesson 11-(Animation - Blend tree)](https://www.bilibili.com/video/BV15E411a7ti)]
+
+
 ## 2021-05-25
 - Draw a map for the first scene
 - Implement hang on function for the player
