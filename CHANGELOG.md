@@ -4,6 +4,21 @@
 
 ### [🔗The series course video](https://space.bilibili.com/370283072/channel/detail?cid=91017&ctype=0)
 
+## 2021-05-28
+- Create a script to control all the audio
+- Create spike brush
+- Add the death effect to the player
+- Add the audio about death
+- Create a script for control the player's death effect and restart the scene
+- Create orb brush
+- Add the audio about orb and the player collect goods
+- Install new package[Post processing]
+- [[🔗video] Lesson 12-(Audio manage)](https://www.bilibili.com/video/BV17E411Y7VN)]
+- [[🔗video] Lesson 13-(Player Death - Spikes & Death)](https://www.bilibili.com/video/BV14E411Y7e9)]
+- [[🔗video] Lesson 14-(Collect goods - Collection Orb)](https://www.bilibili.com/video/BV1TE411a715)]
+- [[🔗video] Lesson 15-(Visual effect & Camera shake - Post processing & Camera shake)](https://www.bilibili.com/video/BV1CE411b79Z)]
+
+
 ## 2021-05-27
 - Install a new package [Cinemachine].
 - Add a new camera and follow the player.
