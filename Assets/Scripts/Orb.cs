@@ -5,18 +5,26 @@ using UnityEngine;
 
 public class Orb : MonoBehaviour
 {
-    private int playerLayer;
+    
+    // layer index of the player
+    private int player;
+
+    // VFX of orb explosion
+    public GameObject explosionVFXPrefab;
+    
     // Start is called before the first frame update
     void Start()
     {
-        playerLayer = LayerMask.NameToLayer("Player");
+        player = LayerMask.NameToLayer("Player");
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.layer == playerLayer)
+        if (other.gameObject.layer == player)
         {
+            Instantiate(explosionVFXPrefab, transform.position, transform.rotation);
             gameObject.SetActive(false);
+            AudioManager.PlayOrbAudio();
         }
     }
 }

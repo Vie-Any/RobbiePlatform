@@ -263,7 +263,8 @@ public class PlayerMovement : MonoBehaviour
             // add a y-axis force to the player to implement jump effect
             rigidbody2D.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
             
-            AudioManage.PlayJumpAudio();
+            // play jump audio
+            AudioManager.PlayJumpAudio();
         }
         // when the jump button was pressed
         else if (isJump)

@@ -45,11 +45,11 @@ public class PlayerAnimation : MonoBehaviour
 
     public void StepAudio()
     {
-        AudioManage.PlayFootstepAudio();
+        AudioManager.PlayFootstepAudio();
     }
 
     public void CrouchStepAudio()
     {
-        AudioManage.PlayCrouchFootstepAudio();
+        AudioManager.PlayCrouchFootstepAudio();
     }
 }
