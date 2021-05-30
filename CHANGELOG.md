@@ -4,6 +4,16 @@
 
 ### [🔗The series course video](https://space.bilibili.com/370283072/channel/detail?cid=91017&ctype=0)
 
+## 2021-05-30
+- Optimize singleton object inital
+- Create GameManager script
+- Optimize scene restart dely 1.5s when the player was dead
+- Count the player collected orb
+- Add fade effect to the scene in and out
+- fix the player can not stand on shrine platform
+- [[🔗video] Lesson 16-GameManager](https://www.bilibili.com/video/BV1iE411q7gU)]
+
+
 ## 2021-05-28
 - Create a script to control all the audio
 - Create spike brush
@@ -13,10 +23,10 @@
 - Create orb brush
 - Add the audio about orb and the player collect goods
 - Install new package[Post processing]
-- [[🔗video] Lesson 12-(Audio manage)](https://www.bilibili.com/video/BV17E411Y7VN)]
-- [[🔗video] Lesson 13-(Player Death - Spikes & Death)](https://www.bilibili.com/video/BV14E411Y7e9)]
-- [[🔗video] Lesson 14-(Collect goods - Collection Orb)](https://www.bilibili.com/video/BV1TE411a715)]
-- [[🔗video] Lesson 15-(Visual effect & Camera shake - Post processing & Camera shake)](https://www.bilibili.com/video/BV1CE411b79Z)]
+- [[🔗video] Lesson 12-Audio manage](https://www.bilibili.com/video/BV17E411Y7VN)]
+- [[🔗video] Lesson 13-Player Death - Spikes & Death](https://www.bilibili.com/video/BV14E411Y7e9)]
+- [[🔗video] Lesson 14-Collect goods - Collection Orb](https://www.bilibili.com/video/BV1TE411a715)]
+- [[🔗video] Lesson 15-Visual effect & Camera shake - Post processing & Camera shake](https://www.bilibili.com/video/BV1CE411b79Z)]
 
 
 ## 2021-05-27
@@ -31,7 +41,7 @@
 - Use hash id of animator's parameter to set value 
 - [[🔗video] Lesson 9-Camera(Prespective & camera following)](https://www.bilibili.com/video/BV1HE41127qk)]
 - [[🔗video] Lesson 10-Lighting effect(Normal Mapping)](https://www.bilibili.com/video/BV1dE411y7m3)]
-- [[🔗video] Lesson 11-(Animation - Blend tree)](https://www.bilibili.com/video/BV15E411a7ti)]
+- [[🔗video] Lesson 11-Animation - Blend tree](https://www.bilibili.com/video/BV15E411a7ti)]
 
 
 ## 2021-05-25

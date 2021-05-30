@@ -47,15 +47,18 @@ public class AudioManager : MonoBehaviour
     
     private void Awake()
     {
-        current = this;
-        DontDestroyOnLoad(gameObject);
-        ambientSource = gameObject.AddComponent<AudioSource>();
-        musicSource = gameObject.AddComponent<AudioSource>();
-        fxSource = gameObject.AddComponent<AudioSource>();
-        playerSource = gameObject.AddComponent<AudioSource>();
-        voiceSource = gameObject.AddComponent<AudioSource>();
-        // start level audio        
-        StartLevelAudio();
+        if (null == current)
+        {
+            current = this;
+            DontDestroyOnLoad(gameObject);
+            ambientSource = gameObject.AddComponent<AudioSource>();
+            musicSource = gameObject.AddComponent<AudioSource>();
+            fxSource = gameObject.AddComponent<AudioSource>();
+            playerSource = gameObject.AddComponent<AudioSource>();
+            voiceSource = gameObject.AddComponent<AudioSource>();
+            // start level audio        
+            StartLevelAudio();
+        }
     }
 
     void StartLevelAudio()

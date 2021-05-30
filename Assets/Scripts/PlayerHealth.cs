@@ -28,7 +28,8 @@ public class PlayerHealth : MonoBehaviour
             
             AudioManager.PlayDeathAudio();
             // restart current scene
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            GameManager.PlayerDied();
         }
     }
 }
