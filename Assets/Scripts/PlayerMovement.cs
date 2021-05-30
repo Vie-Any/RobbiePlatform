@@ -262,6 +262,8 @@ public class PlayerMovement : MonoBehaviour
             jumpTime = Time.time + jumpHoldDuration;
             // add a y-axis force to the player to implement jump effect
             rigidbody2D.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            
+            AudioManage.PlayJumpAudio();
         }
         // when the jump button was pressed
         else if (isJump)
@@ -285,11 +287,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (xVelocity < 0)
         {
-            transform.localScale = new Vector2(-1, 1);
+            transform.localScale = new Vector3(-1, 1,1);
         }
         else if (xVelocity > 0)
         {
-            transform.localScale = new Vector2(1, 1);
+            transform.localScale = new Vector3(1, 1,1);
         }
     }
 
