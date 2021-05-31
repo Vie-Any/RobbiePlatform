@@ -19,6 +19,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip deathFXClip;
     // audio of orb explosion
     public AudioClip orbFXClip;
+    // audio of door open
+    public AudioClip doorFXClip;
 
     [Header("Robbie Audio")]
     // Robbie walk audio array
@@ -47,18 +49,20 @@ public class AudioManager : MonoBehaviour
     
     private void Awake()
     {
-        if (null == current)
+        if (null != current)
         {
-            current = this;
-            DontDestroyOnLoad(gameObject);
-            ambientSource = gameObject.AddComponent<AudioSource>();
-            musicSource = gameObject.AddComponent<AudioSource>();
-            fxSource = gameObject.AddComponent<AudioSource>();
-            playerSource = gameObject.AddComponent<AudioSource>();
-            voiceSource = gameObject.AddComponent<AudioSource>();
-            // start level audio        
-            StartLevelAudio();
+            Destroy(gameObject);
+            return;
         }
+        current = this;
+        DontDestroyOnLoad(gameObject);
+        ambientSource = gameObject.AddComponent<AudioSource>();
+        musicSource = gameObject.AddComponent<AudioSource>();
+        fxSource = gameObject.AddComponent<AudioSource>();
+        playerSource = gameObject.AddComponent<AudioSource>();
+        voiceSource = gameObject.AddComponent<AudioSource>();
+        // start level audio        
+        StartLevelAudio();
     }
 
     void StartLevelAudio()
@@ -71,6 +75,12 @@ public class AudioManager : MonoBehaviour
         current.musicSource.clip = current.musicClip;
         current.musicSource.loop = true;
         current.musicSource.Play();
+    }
+
+    public static void PlayDoorOpenAudio()
+    {
+        current.fxSource.clip = current.doorFXClip;
+        current.fxSource.PlayDelayed(1f);
     }
 
     /// <summary>

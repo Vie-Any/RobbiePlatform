@@ -4,6 +4,16 @@
 
 ### [🔗The series course video](https://space.bilibili.com/370283072/channel/detail?cid=91017&ctype=0)
 
+## 2021-05-31
+- Create a script to control the door
+- Implement door animation trigger when the player collected all the orb
+- Add UI Manager prefab to the scene.
+- Use script to refresh UI Manager text compoent value for display
+- Add door open audio.
+- Use script to stop the player movement when the player was won.
+- [[🔗video] Lesson 17-UI Manager(Door & Win zone)](https://www.bilibili.com/video/BV1zE411B7gA)]
+
+
 ## 2021-05-30
 - Optimize singleton object inital
 - Create GameManager script
