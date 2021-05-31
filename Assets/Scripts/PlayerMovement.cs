@@ -116,6 +116,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.GameOver())
+        {
+            return;
+        }
         // check the input button state
         jumpPressed = Input.GetButtonDown("Jump");
         jumpHeld = Input.GetButton("Jump");
@@ -125,6 +129,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (GameManager.GameOver())
+        {
+            return;
+        }
         PhysicsCheck();
         GroundMovement();
         MidAirMovement();
