@@ -101,6 +101,7 @@ public class GameManager : MonoBehaviour
     {
         instance.gameIsOver = true;
         UIManager.DisplayGameIsOver();
+        AudioManager.PlayWinAudio();
     }
 
     public static bool GameOver()

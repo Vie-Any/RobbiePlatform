@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using Random = UnityEngine.Random;
 
 public class AudioManager : MonoBehaviour
@@ -21,6 +22,10 @@ public class AudioManager : MonoBehaviour
     public AudioClip orbFXClip;
     // audio of door open
     public AudioClip doorFXClip;
+    // level start audio
+    public AudioClip startLevelClip;
+    // player win audio
+    public AudioClip winClip;
 
     [Header("Robbie Audio")]
     // Robbie walk audio array
@@ -46,6 +51,13 @@ public class AudioManager : MonoBehaviour
     private AudioSource fxSource;
     private AudioSource playerSource;
     private AudioSource voiceSource;
+
+    public AudioMixerGroup ambientGroup;
+    public AudioMixerGroup musicGroup;
+    public AudioMixerGroup fxGroup;
+    public AudioMixerGroup playerGroup;
+    public AudioMixerGroup voiceGroup;
+    
     
     private void Awake()
     {
@@ -61,6 +73,14 @@ public class AudioManager : MonoBehaviour
         fxSource = gameObject.AddComponent<AudioSource>();
         playerSource = gameObject.AddComponent<AudioSource>();
         voiceSource = gameObject.AddComponent<AudioSource>();
+
+        ambientSource.outputAudioMixerGroup = ambientGroup;
+        musicSource.outputAudioMixerGroup = musicGroup;
+        fxSource.outputAudioMixerGroup = fxGroup;
+        playerSource.outputAudioMixerGroup = playerGroup;
+        voiceSource.outputAudioMixerGroup = voiceGroup;
+        
+        
         // start level audio        
         StartLevelAudio();
     }
@@ -75,6 +95,17 @@ public class AudioManager : MonoBehaviour
         current.musicSource.clip = current.musicClip;
         current.musicSource.loop = true;
         current.musicSource.Play();
+        
+        // level start audio
+        current.fxSource.clip = current.startLevelClip;
+        current.fxSource.Play();
+    }
+
+    public static void PlayWinAudio()
+    {
+        current.fxSource.clip = current.winClip;
+        current.fxSource.Play();
+        current.playerSource.Stop();
     }
 
     public static void PlayDoorOpenAudio()

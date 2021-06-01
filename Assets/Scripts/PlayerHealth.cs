@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class PlayerHealth : MonoBehaviour
 {
     //
     public GameObject deathVFXPrefab;
+    // death posiotion
+    public GameObject deathPos;
     
     // layer index of traps
     private int trapsLayer;
@@ -23,6 +26,7 @@ public class PlayerHealth : MonoBehaviour
         {
             // play death 
             Instantiate(deathVFXPrefab, transform.position, transform.rotation);
+            Instantiate(deathPos, transform.position, Quaternion.Euler(0,0,Random.Range(-45,90)));
             
             gameObject.SetActive(false);
             

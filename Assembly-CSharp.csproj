@@ -73,6 +73,7 @@
     <Compile Include="Assets\Addons\Tilemap\Tiles\Terrain Tile\Scripts\TerrainTile.cs" />
     <Compile Include="Assets\Addons\Tilemap\Tiles\Weighted Random Tile\WeightedRandomTile.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\DeathPos.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\EmissionPulse.cs" />
     <Compile Include="Assets\Scripts\FPS.cs" />
