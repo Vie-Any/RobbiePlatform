@@ -2,9 +2,7 @@
 
 A 2D game learning project
 
-```
 This project is for record my unity 2D game develop learning. Daily change log ☞ [🔗](CHANGELOG.md)
-```
 
 ## Tools:
 1. macOS Big Sur
