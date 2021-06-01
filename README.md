@@ -3,7 +3,7 @@
 A 2D game learning project
 
 ```
-This project is for record my unity 2D game develop learning.
+This project is for record my unity 2D game develop learning. Daily change log ☞ [🔗](CHANGELOG.md)
 ```
 
 ## Tools:

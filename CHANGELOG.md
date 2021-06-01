@@ -4,6 +4,15 @@
 
 ### [🔗The series course video](https://space.bilibili.com/370283072/channel/detail?cid=91017&ctype=0)
 
+# Finish the learning of the course at 2021-06-01
+
+## 2021-06-01
+- Use AudioMixGroup manage audio properties by audio group
+- Create a new prefab for player daeth position shadow
+- Add scene start audio at the beginning
+- [[🔗video] Lesson 18-Final lesson(Init audio volumn & player death position shadow)](https://www.bilibili.com/video/BV1PE411i753)]
+
+
 ## 2021-05-31
 - Create a script to control the door
 - Implement door animation trigger when the player collected all the orb
